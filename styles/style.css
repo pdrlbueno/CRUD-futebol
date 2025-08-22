@@ -1,0 +1,40 @@
+body{
+
+}
+
+.boxTimes{
+    background-color:rgb( 0, 89, 225);
+    text-align: center;
+}
+.boxTimes input{
+    border: 2px black solid;
+    border-radius: 4px;
+    background-color: white;
+    width: 60%;
+}
+.containerTimes{
+    background-color:rgb( 0, 89, 225);
+    text-align: center;
+    padding-top: 1%;
+    border-radius: 10px;
+    width: 50%;
+
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.button{
+    margin-top: 5%;
+    background-color: white;
+    padding: 2%;
+    border-radius: 6px;
+    font-size: 70%;
+}
+
+input{
+    all:unset
+}

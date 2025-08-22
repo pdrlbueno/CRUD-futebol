@@ -7,6 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <a href="times/create_time.php">times</a>
 </body>
 </html>
