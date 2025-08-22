@@ -9,7 +9,7 @@ CREATE TABLE times (
 
 CREATE TABLE jogadores (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(100) NOT NULL,
+    nomeJ VARCHAR(100) NOT NULL,
     posicao VARCHAR(30) NOT NULL,
     numero_camisa INT NOT NULL,
     peso INT NOT NULL,
