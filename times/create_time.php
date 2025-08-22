@@ -26,12 +26,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de times</title>
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
 
 <body>
+    <div class="containerTimes">
 
-    <form method="POST" action="create_time.php">
+        <form method="POST" action="create_time.php">
+            <div class="flex">
 
+<<<<<<< HEAD
         <label for="nome">Nome:</label>
         <input type="text" name="nome" required>
 
@@ -43,6 +47,25 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     </form>
 
     <a href="read_time.php">Ver times.</a>
+=======
+                <div class="boxTimes">
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" name="nome" required>
+                </div>
+        
+                <div class="boxTimes">
+                    <label for="cidade">Cidade:</label><br>
+                    <input type="text" name="cidade" required>
+                </div>
+            </div>
+    
+            <input type="submit" value="Adicionar" class="button">
+    
+        </form>
+    
+        <a href="read_times.php">Ver times</a>
+    </div>
+>>>>>>> d39a4b0078f9b0a499543482ad9930728437dccb
 
 </body>
 
