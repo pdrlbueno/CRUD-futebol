@@ -1,1 +1,0 @@
-<img src="jogador.jpg" alt="Descrição da imagem">
