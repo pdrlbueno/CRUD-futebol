@@ -21,3 +21,36 @@ header{
     font-size: x-large;
     text-align: center;
 }
+
+form{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.inputInfo{
+    margin: auto;
+    padding: 10px 20px;
+    background-color:rgb(62, 130, 255);
+    margin-bottom: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+
+.inputInfo > label{
+    color: white;
+    font-size: xx-large;
+    margin: 0;
+    padding: 0;
+}
+
+.inputInfo > input{
+    height: 50px;
+    font-size: large;
+    border-radius: 10px;
+}
