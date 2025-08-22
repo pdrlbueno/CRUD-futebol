@@ -12,6 +12,9 @@ CREATE TABLE jogadores (
     nome VARCHAR(100) NOT NULL,
     posicao VARCHAR(30) NOT NULL,
     numero_camisa INT NOT NULL,
+    peso INT NOT NULL,
+    altura INT NOT NULL,
+    idade INT NOT NULL,
     time_id INT,
     FOREIGN KEY (time_id) REFERENCES times(id)
 );
@@ -23,6 +26,9 @@ CREATE TABLE partidas (
     data_jogo DATE NOT NULL,
     gols_casa INT DEFAULT 0,
     gols_fora INT DEFAULT 0,
+    publico INT NOT NULL,
+    renda INT NOT NULL,
+    estadio INT NOT NULL,
     FOREIGN KEY (time_casa_id) REFERENCES times(id),
     FOREIGN KEY (time_fora_id) REFERENCES times(id)
 );
