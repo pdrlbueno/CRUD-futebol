@@ -1,6 +1,6 @@
 <?php
 
-include 'db.php';
+include '../db.php';
 
 $sql = "SELECT * FROM times";
 $result = $conn->query($sql);

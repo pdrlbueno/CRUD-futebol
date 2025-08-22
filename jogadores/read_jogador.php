@@ -1,17 +1,20 @@
 <?php
 
-include 'db.php';
+include '../db.php';
 
 $sql = "SELECT 
     id,
     j.nome,
     posicao,
     numero_camisa,
+    peso,
+    altura,
+    idade,
     time_id,
     t.nome,
 
 FROM jogadores j
-INNER JOIN usuarios u ON p.id_usuario = u.id_usuario;
+INNER JOIN times t ON time_id = t.id;
 ";
 $result = $conn->query($sql);
 

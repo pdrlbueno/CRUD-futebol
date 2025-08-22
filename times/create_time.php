@@ -1,6 +1,6 @@
 <?php
 
-include 'db.php';
+include '../db.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     </form>
 
-    <a href="read_times.php">Ver times.</a>
+    <a href="read_time.php">Ver times.</a>
 
 </body>
 
