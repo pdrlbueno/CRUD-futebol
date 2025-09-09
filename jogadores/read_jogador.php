@@ -3,39 +3,37 @@
 include '../db.php';
 
 $sql = "SELECT 
-    id,
-    j.nome,
-    posicao,
-    numero_camisa,
-    peso,
-    altura,
-    idade,
-    time_id,
-    t.nome,
+    j.id,
+    j.nomeJ,
+    j.posicao,
+    j.numero_camisa,
+    j.peso,
+    j.altura,
+    j.idade,
+    j.time_id,
+    t.nome
 
-FROM jogadores j
-INNER JOIN times t ON time_id = t.id;
+FROM jogadores as j
+INNER JOIN times as t ON j.time_id = t.id;
 ";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0){
-    echo '<div class="produtos_container">';
+    echo '<div>';
     while($row = $result->fetch_assoc()) {
-        echo '<div class="produtos_box">';
         echo '
-        <h1>' . htmlspecialchars($row["nome_produto"]) . '</h1>
-        <div class="produtos_flex">
-            <div class="secaoBranca">
-                <h1>Descrição: ' . htmlspecialchars($row["descricao_produto"]) . '</h1>
-                <h1>Quantidade: ' . htmlspecialchars($row["quantidade_produto"]) . '</h1>
-                <h1>Validade: ' . htmlspecialchars($row["validade_produto"]) . '</h1>
-                <h1>Preço: R$' . number_format($row["preco_produto"], 2, ',', '.') . '</h1>
-                <h1>Usuário: ' . htmlspecialchars($row["nome_usuario"]) . '</h1>
-                
+        <div>
+            <div>
+                <h1>Nome: ' . htmlspecialchars($row["nomeJ"]) . '</h1>
+                <h1>Posição: ' . htmlspecialchars($row["posicao"]) . '</h1>
+                <h1>Número Da Camisa: ' . htmlspecialchars($row["numero_camisa"]) . '</h1>
+                <h1>Peso:' . number_format($row["peso"]) . '</h1>
+                <h1>Altura: ' . htmlspecialchars($row["altura"]) . '</h1>
+                <h1>Idade: ' . htmlspecialchars($row["idade"]) . '</h1>
+                <h1>Time: ' . htmlspecialchars($row["time_id"]) . '</h1>
             </div>
         </div>
         ';
-        echo '</div>';
     }
     echo '</div>';
 } else {
